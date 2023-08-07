@@ -61,7 +61,7 @@ def evaluate(model_cl, reserve_layer, outputs, method='linear'):
 
 def main():
     x_data = np.load('/kaggle/input/UCIHAR/UCI_X.npy')
-    y_data = np.load('/kaggle/input/UCIHAR/UCI_X.npy')
+    y_data = np.load('/kaggle/input/UCIHAR/UCI_Y.npy')
 
     n_timesteps, n_features, n_outputs = x_data.shape[1], x_data.shape[2], y_data.shape[1]
     backbone = get_DCL(n_timesteps, n_features)
