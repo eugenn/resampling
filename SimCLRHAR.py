@@ -68,7 +68,7 @@ def main():
     model_cl = attch_projection_head(backbone)
 
     batch_size = 1024
-    epochs = 2
+    epochs = 200
     temperature = 0.1
     optimizer = tf.keras.optimizers.Adam(0.001)
 
